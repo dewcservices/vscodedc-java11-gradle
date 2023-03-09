@@ -23,7 +23,7 @@ The following are specific commands for this devcontainer
 ### Add devcontainer to a project for the first time
 
 ```shell
-git submodule add ssh://<submodule-repo>.git ./.devcontainer
+git submodule add git@github.com:dewcservices/vscodedc-java11-gradle.git ./.devcontainer
 ```
 
 #### Expected result
