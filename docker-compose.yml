@@ -1,6 +1,6 @@
 version: '3.6'
 
-# volumes:
+volumes:
 #   zookeeper-data:
 #     driver: local
 #   zookeeper-log:
@@ -11,10 +11,9 @@ version: '3.6'
 #     driver: local
 #   pgadmin-data:
 #     driver: local
-#   vscode-extensions:
+  vscode-extensions:
 
 services:
-
   app:
     build:
       context: .
