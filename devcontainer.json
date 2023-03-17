@@ -33,20 +33,24 @@
 				],
 				// ###########################
 				"editor.tabSize": 2,
-				"workbench.iconTheme": "material-icon-theme"  
+				"workbench.iconTheme": "material-icon-theme",
+				"workbench.colorTheme": "Dracula Soft",
+				"peacock.remoteColor": "#42b883"
 			},
 			
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
-				"redhat.java",
 				"vscjava.vscode-java-pack",
-				"vmware.vscode-boot-dev-pack",
+				"pivotal.vscode-boot-dev-pack",
 				"DavidAnson.vscode-markdownlint",
-				"vsjava.vscode-lombok",
+				"GabrielBB.vscode-lombok",
+				"dracula-theme.theme-dracula",
+				"PKief.material-icon-theme",
 				"Gruntfuggly.todo-tree",
 				"eamodio.gitlens",
 				"mhutchie.git-graph",
-				"vscjava.vscode-gradle"
+				"johnpapa.vscode-peacock",
+				"streetsidesoftware.code-spell-checker"
 			]
 		}
 	},
