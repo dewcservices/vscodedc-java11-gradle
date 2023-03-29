@@ -7,15 +7,16 @@
 	"workspaceFolder": "/workspace",
 	"service": "app",
 	// Uncomment the next line if you want start specific services in your Docker Compose config.
-	// "runServices": ["zookeeper-server", "kafka-server", "akhq", "app", "postgresql"],
+	"runServices": ["app"],
 	// Uncomment the next line if you want to keep your containers running after VS Code shuts down.
-	// "shutdownAction": "none",
+	"shutdownAction": "stopCompose",
 	// Configure tool-specific properties.
 	"customizations": {
 		// Configure properties specific to VS Code.
 		"vscode": {
 			// Set *default* container specific settings.json values on container create.
 			"settings": { 
+				"dev.containers.copyGitConfig": true,
 				"#terminal.integrated.defaultProfile.linux#": "/bin/bash",
 				//"java.jdt.ls.java.home": "/docker-java-home",
 				"java.home": "/docker-java-home",
@@ -56,11 +57,7 @@
 	},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": [
-		8080,
-		9080,
-		5050
-	]
+	"forwardPorts": [8080]
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "java -version",
 	// Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
